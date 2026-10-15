@@ -85,6 +85,20 @@
   .topic svg { width: 52px; height: 52px; }
   .topic h3 { font-size: 26px; line-height: 1.15; margin-bottom: 8px; }
 
+  /* Parent scripts */
+  .coach { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 56px; align-items: start; }
+  .coach .section-head { margin-bottom: 0; }
+  .coach-points { list-style: none; margin: 24px 0 0; padding: 0; display: flex; flex-direction: column; gap: 14px; }
+  .coach-points li { padding-left: 28px; position: relative; }
+  .coach-points li::before { content: ""; position: absolute; left: 0; top: 0.7em; width: 14px; height: 2px; background: var(--clay); }
+  .script { background: var(--sand); border-radius: 6px; padding: 28px; display: flex; flex-direction: column; gap: 18px; }
+  .script-title { font: 400 24px/1.2 var(--serif); }
+  .script ol { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 16px; }
+  .script li { display: grid; grid-template-columns: 124px minmax(0, 1fr); gap: 12px; }
+  .script .step { font-size: 13px; font-weight: 700; letter-spacing: 1.2px; text-transform: uppercase; color: var(--clay-deep); padding-top: 3px; }
+  .script q { quotes: "\201C" "\201D"; font-style: italic; }
+  .script .stuck { border-top: 2px solid var(--line); padding-top: 16px; font-size: 15px; }
+
   /* Stages */
   .stages { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
   .stage { border-top: 3px solid var(--clay); padding-top: 18px; display: flex; flex-direction: column; gap: 8px; }
@@ -103,7 +117,7 @@
 
   /* Workbooks */
   .books { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
-  .book { background: var(--sand); border-radius: 6px; padding: 28px; display: flex; flex-direction: column; gap: 10px; }
+  .book { background: var(--paper); border-radius: 6px; padding: 28px; display: flex; flex-direction: column; gap: 10px; }
   .book .when { margin: 0; }
   .book h3 { font-size: 28px; line-height: 1.1; }
 
@@ -125,7 +139,8 @@
     .hero .wrap { grid-template-columns: minmax(0, 1fr); gap: 32px; padding-block: 32px 48px; }
     .lead { font-size: 18px; }
     section { padding-block: 56px; }
-    .topics, .books, .stages { grid-template-columns: minmax(0, 1fr); gap: 32px; }
+    .topics, .books, .stages, .coach { grid-template-columns: minmax(0, 1fr); gap: 32px; }
+    .script li { grid-template-columns: minmax(0, 1fr); gap: 2px; }
     .year { grid-template-columns: minmax(0, 1fr); gap: 40px; }
     .stairs { max-width: 360px; }
     .ig-link .label { display: none; }
@@ -157,7 +172,7 @@
       <div>
         <h1 id="hero-title">Helping your child get ready for their next chapter.</h1>
         <div class="rule"></div>
-        <p class="lead">Strong reading, writing and math skills, confident learning habits, and clear guidance when it's time to choose a school. For GTHA families with children in Kindergarten to Grade 6.</p>
+        <p class="lead">Strong skills and confident learners, simple scripts that show you how to teach at home, and clear guidance when it's time to choose a school. For GTHA families with children in Kindergarten to Grade 6.</p>
         <div class="actions">
           <a class="button" href="https://www.instagram.com/nextchapterprep.ca/" rel="noopener">Follow on Instagram</a>
           <a class="button quiet" href="#help">How we help</a>
@@ -196,13 +211,41 @@
         </div>
         <div class="topic">
           <svg viewBox="0 0 52 52" aria-hidden="true"><g class="art"><rect x="8" y="30" width="36" height="10" rx="2"/><rect x="12" y="20" width="30" height="10" rx="2"/><rect x="10" y="10" width="32" height="10" rx="2"/><path d="M8 46 L44 46"/></g></svg>
-          <div><h3>Workbooks for home</h3><p>Practice books families can use at the kitchen table, starting with Grade 5 and Grade 6. More grades and one-on-one support will follow.</p></div>
+          <div><h3>Workbooks for home</h3><p>Practice books with a parent script for every lesson, starting with Grade 5 and Grade 6. More grades and one-on-one support will follow.</p></div>
         </div>
       </div>
     </div>
   </section>
 
-  <section aria-labelledby="stages-title">
+  <section id="parents" aria-labelledby="parents-title">
+    <div class="wrap coach">
+      <div>
+        <div class="section-head">
+          <h2 id="parents-title">We show you how to teach it</h2>
+          <p>Most practice books hand parents a page of questions and nothing else. When your child gets stuck, it's hard to know what to say, and practice time can turn into a standoff.</p>
+          <p>Every lesson we make comes with a short parent script, so you know exactly how to help.</p>
+        </div>
+        <ul class="coach-points">
+          <li><strong>Words to say.</strong> Plain, friendly language you can read straight from the page.</li>
+          <li><strong>Show first, then practise together.</strong> You model the skill, try it side by side, then hand it over.</li>
+          <li><strong>What to do when they're stuck.</strong> A hint to give before the answer, so your child does the thinking.</li>
+          <li><strong>Short sessions.</strong> Most lessons take 10 to 15 minutes, so practice fits around family life.</li>
+        </ul>
+      </div>
+      <figure class="script" style="margin:0" aria-labelledby="script-title">
+        <span class="when" style="margin:0">Sample parent script · Grade 1 reading</span>
+        <figcaption id="script-title" class="script-title">The sound of “sh”</figcaption>
+        <ol>
+          <li><span class="step">1 · Show</span><span><q>These two letters, s and h, work together. They make one sound: /sh/. Listen: /sh/, ship.</q></span></li>
+          <li><span class="step">2 · Together</span><span><q>Let's read it together. Point to each sound with me: /sh/, /i/, /p/. Ship.</q></span></li>
+          <li><span class="step">3 · Your turn</span><span><q>Now you try this one on your own.</q> Write <strong>shop</strong> and let your child read it.</span></li>
+        </ol>
+        <p class="stuck"><strong>If they get stuck:</strong> point to the s and h and ask, <q>What sound do these two make together?</q> Wait a few seconds before you help.</p>
+      </figure>
+    </div>
+  </section>
+
+  <section class="band" aria-labelledby="stages-title">
     <div class="wrap">
       <div class="section-head">
         <h2 id="stages-title">Learning at every stage</h2>
@@ -228,7 +271,7 @@
     </div>
   </section>
 
-  <section id="year" class="band" aria-labelledby="year-title">
+  <section id="year" aria-labelledby="year-title">
     <div class="wrap">
       <div class="section-head">
         <h2 id="year-title">If you're applying to independent schools</h2>
@@ -251,7 +294,7 @@
     </div>
   </section>
 
-  <section aria-labelledby="books-title">
+  <section class="band" aria-labelledby="books-title">
     <div class="wrap">
       <div class="section-head">
         <h2 id="books-title">Workbooks on the way</h2>
