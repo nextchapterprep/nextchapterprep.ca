@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Next Chapter Prep · Independent school applications, step by step</title>
+<meta name="description" content="Step-by-step help for GTHA families applying to independent schools. Deadlines, tests, interviews and financial aid, explained clearly.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://nextchapterprep.ca/">
+<meta property="og:title" content="Next Chapter Prep">
+<meta property="og:description" content="Step-by-step help for GTHA families applying to independent schools.">
+<meta property="og:image" content="https://nextchapterprep.ca/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#fbf2e9">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=DM+Serif+Display&display=swap">
+<style>
+  /* Next Chapter Prep brand kit: paper ground, ink type, one clay accent, single-weight line art. */
+  :root {
+    --paper: #fbf2e9;
+    --sand: #f3e3d3;
+    --line: #e3cfbc;
+    --ink: #152f4b;
+    --ink-soft: #4d5f73;
+    --clay: #c8775a;
+    --clay-deep: #985034;
+    --serif: "DM Serif Display", Georgia, "Times New Roman", serif;
+    --sans: "DM Sans", "Helvetica Neue", Arial, sans-serif;
+    --wrap: 1080px;
+    color-scheme: light;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font: 400 17px/1.6 var(--sans); }
+  img, svg { max-width: 100%; }
+  a { color: var(--clay-deep); }
+  a:hover { color: var(--ink); }
+  a:focus-visible, .button:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }
+  h1, h2, h3 { font-family: var(--serif); font-weight: 400; color: var(--ink); margin: 0; text-wrap: balance; }
+  p { margin: 0; }
+
+  .wrap {
+    max-width: var(--wrap); margin: 0 auto;
+    padding-left: max(20px, env(safe-area-inset-left, 0px));
+    padding-right: max(20px, env(safe-area-inset-right, 0px));
+  }
+  .art { fill: none; stroke: var(--clay); stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+
+  /* Header */
+  .site-head .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 20px; }
+  .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); }
+  .brand svg { width: 36px; height: 36px; flex: none; }
+  .brand span { font: 400 24px/1 var(--serif); }
+  .ig-link { font-weight: 500; font-size: 15px; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; color: var(--ink); }
+  .ig-link svg { width: 18px; height: 18px; }
+
+  /* Hero */
+  .hero .wrap { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr); gap: 48px; align-items: end; padding-block: 56px 72px; }
+  .hero h1 { font-size: clamp(40px, 6vw, 64px); line-height: 1.02; letter-spacing: -0.5px; }
+  .rule { width: 64px; height: 3px; background: var(--clay); margin: 28px 0 20px; }
+  .lead { font-size: 20px; line-height: 1.5; max-width: 34ch; }
+  .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
+  .button {
+    display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 48px; padding: 0 22px;
+    border-radius: 6px; font: 500 16px/1 var(--sans); text-decoration: none; background: var(--ink); color: var(--paper);
+  }
+  .button:hover { background: #0e2238; color: var(--paper); }
+  .button.quiet { background: transparent; color: var(--ink); box-shadow: inset 0 0 0 2px var(--ink); }
+  .button.quiet:hover { background: var(--sand); color: var(--ink); }
+  .hero-art { width: 100%; height: auto; display: block; }
+
+  /* Sections */
+  section { padding-block: 72px; }
+  .section-head { max-width: 640px; display: flex; flex-direction: column; gap: 14px; margin-bottom: 40px; }
+  .section-head h2 { font-size: clamp(32px, 4vw, 44px); line-height: 1.08; }
+  .section-head p { color: var(--ink); font-size: 18px; }
+  .band { background: var(--sand); }
+
+  /* What we cover */
+  .topics { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 40px 56px; }
+  .topic { display: grid; grid-template-columns: 52px minmax(0, 1fr); gap: 20px; align-items: start; }
+  .topic svg { width: 52px; height: 52px; }
+  .topic h3 { font-size: 26px; line-height: 1.15; margin-bottom: 8px; }
+
+  /* Application year */
+  .year { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 0.7fr); gap: 56px; align-items: end; }
+  .steps { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 28px; counter-reset: step; }
+  .steps li { display: grid; grid-template-columns: 56px minmax(0, 1fr); gap: 16px; counter-increment: step; }
+  .steps li::before { content: counter(step); font: 400 52px/0.9 var(--serif); color: var(--clay); }
+  .when { display: block; font-size: 13px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--clay-deep); margin-bottom: 4px; }
+  .steps h3 { font-size: 24px; line-height: 1.2; margin-bottom: 6px; }
+  .note { margin-top: 32px; font-size: 14px; line-height: 1.5; color: var(--ink-soft); max-width: 60ch; }
+  .stairs { width: 100%; height: auto; display: block; }
+
+  /* Workbooks */
+  .books { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+  .book { background: var(--paper); border-radius: 6px; padding: 28px; display: flex; flex-direction: column; gap: 10px; }
+  .book .when { margin: 0; }
+  .book h3 { font-size: 28px; line-height: 1.1; }
+
+  /* Contact */
+  .contact .wrap { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px; }
+  .contact h2 { font-size: clamp(30px, 4vw, 40px); line-height: 1.1; }
+  .contact p { margin-top: 10px; font-size: 18px; }
+
+  /* Footer */
+  .site-foot { padding-block: 40px 48px; }
+  .divider { display: flex; align-items: center; gap: 20px; }
+  .divider span { flex: 1; height: 2px; background: var(--clay); }
+  .divider svg { width: 44px; height: 44px; flex: none; }
+  .foot-name { text-align: center; font: 400 26px/1 var(--serif); margin-top: 14px; }
+  .foot-small { text-align: center; font-size: 14px; color: var(--ink-soft); margin-top: 10px; }
+
+  @media (max-width: 760px) {
+    body { font-size: 16px; }
+    .hero .wrap { grid-template-columns: minmax(0, 1fr); gap: 32px; padding-block: 32px 48px; }
+    .lead { font-size: 18px; }
+    section { padding-block: 56px; }
+    .topics, .books { grid-template-columns: minmax(0, 1fr); gap: 32px; }
+    .year { grid-template-columns: minmax(0, 1fr); gap: 40px; }
+    .stairs { max-width: 360px; }
+    .ig-link .label { display: none; }
+  }
+  @media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
+</style>
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="Next Chapter Prep home">
+      <svg viewBox="0 0 48 48" aria-hidden="true"><g class="art" style="stroke-width:2.6">
+        <path d="M24 15 C20 12 15 11.5 9 12.5 L9 33 C15 32 20 32.5 24 35.5 C28 32.5 33 32 39 33 L39 12.5 C33 11.5 28 12 24 15 Z"/>
+        <path d="M24 15 L24 35.5"/>
+      </g></svg>
+      <span>Next Chapter Prep</span>
+    </a>
+    <a class="ig-link" href="https://www.instagram.com/nextchapterprep.ca/" rel="noopener" aria-label="Next Chapter Prep on Instagram">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+      <span class="label">@nextchapterprep.ca</span>
+    </a>
+  </div>
+</header>
+
+<main>
+  <section class="hero" aria-labelledby="hero-title" style="padding-block:0">
+    <div class="wrap">
+      <div>
+        <h1 id="hero-title">Step-by-step help for GTHA families applying to independent schools.</h1>
+        <div class="rule"></div>
+        <p class="lead">Deadlines, tests, interviews and financial aid, explained clearly, so you always know what comes next.</p>
+        <div class="actions">
+          <a class="button" href="https://www.instagram.com/nextchapterprep.ca/" rel="noopener">Follow on Instagram</a>
+          <a class="button quiet" href="#year">See the application year</a>
+        </div>
+      </div>
+      <svg class="hero-art" viewBox="0 0 520 300" aria-hidden="true"><g class="art">
+        <path d="M0 252 C90 236 170 258 250 250 C320 243 360 238 392 242"/>
+        <path d="M448 244 C480 241 500 244 520 246"/>
+        <path d="M150 300 C210 276 290 262 392 243"/>
+        <path d="M262 300 C300 282 360 262 420 244"/>
+        <path d="M392 243 L392 112 L442 112 L442 244"/>
+        <path d="M442 112 L478 124 L478 254 L442 244"/>
+        <circle cx="468" cy="186" r="3.5"/>
+      </g></svg>
+    </div>
+  </section>
+
+  <section class="band" aria-labelledby="cover-title">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="cover-title">What we help with</h2>
+        <p>The independent school process has a lot of moving parts. We explain each one in plain language, with the dates and documents you'll actually need.</p>
+      </div>
+      <div class="topics">
+        <div class="topic">
+          <svg viewBox="0 0 52 52" aria-hidden="true"><g class="art"><path d="M14 44 L14 8 L34 8 L34 44"/><path d="M34 8 L42 11 L42 46 L34 44"/><circle cx="39" cy="28" r="1.5"/><path d="M4 44 L48 44"/></g></svg>
+          <div><h3>Choosing schools</h3><p>How to build a shortlist around your child: how they learn, the size and pace that suit them, and what daily life and the commute will look like.</p></div>
+        </div>
+        <div class="topic">
+          <svg viewBox="0 0 52 52" aria-hidden="true"><g class="art"><rect x="7" y="10" width="38" height="34" rx="3"/><path d="M7 19 L45 19"/><path d="M16 6 L16 13"/><path d="M36 6 L36 13"/><path d="M19 32 L24 37 L34 26"/></g></svg>
+          <div><h3>Deadlines and financial aid</h3><p>When applications, teacher references and financial aid forms are usually due, and how to keep them all in one family calendar.</p></div>
+        </div>
+        <div class="topic">
+          <svg viewBox="0 0 52 52" aria-hidden="true"><g class="art"><path d="M36 6 L46 16 L19 43 L7 46 L10 34 Z"/><path d="M31 11 L41 21"/><path d="M10 34 L19 43"/></g></svg>
+          <div><h3>Tests and assessments</h3><p>What the SSAT (Secondary School Admission Test) and other entrance assessments involve, and how to prepare steadily rather than cram.</p></div>
+        </div>
+        <div class="topic">
+          <svg viewBox="0 0 52 52" aria-hidden="true"><g class="art"><path d="M6 10 L32 10 Q35 10 35 13 L35 27 Q35 30 32 30 L17 30 L10 36 L10 30 L9 30 Q6 30 6 27 L6 13 Q6 10 9 10 Z"/><path d="M39 20 L43 20 Q46 20 46 23 L46 36 Q46 39 43 39 L42 39 L42 45 L35 39 L24 39 Q21 39 21 36 L21 34"/></g></svg>
+          <div><h3>Interviews and visits</h3><p>What to ask at an open house, and how to help your child talk about themselves in their own words, without memorized answers.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="year" aria-labelledby="year-title">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="year-title">The application year at a glance</h2>
+        <p>For children starting Grade 7 in fall 2027, the application happens this school year, while they are in Grade 6.</p>
+      </div>
+      <div class="year">
+        <ol class="steps">
+          <li><div><span class="when">September to November</span><h3>Visit and shortlist</h3><p>Go to open houses with your child, take notes, and narrow your list to the schools that suit them.</p></div></li>
+          <li><div><span class="when">Late November to January</span><h3>Apply</h3><p>Many day schools share a December 1 deadline; others fall between late November and January. Ask teachers for references early, and start the financial aid application at the same time.</p></div></li>
+          <li><div><span class="when">Fall to winter</span><h3>Tests and interviews</h3><p>Many schools use the SSAT, with sittings through the fall and winter, and some run their own assessments. Interviews and visit days often begin in the fall.</p></div></li>
+          <li><div><span class="when">Late February</span><h3>Offers</h3><p>Many schools release decisions on a shared offer date in late February. Then comes the choice your family makes together.</p></div></li>
+        </ol>
+        <svg class="stairs" viewBox="0 0 400 260" aria-hidden="true"><g class="art">
+          <path d="M10 250 L90 250 L90 205 L170 205 L170 160 L250 160 L250 115 L330 115 L330 70 L360 70"/>
+          <path d="M360 70 L360 14"/>
+          <path d="M360 14 L392 25 L360 36"/>
+        </g></svg>
+      </div>
+      <p class="note">As of fall 2026. Dates, tests and requirements vary from school to school, so check each school's admissions page for its own.</p>
+    </div>
+  </section>
+
+  <section class="band" aria-labelledby="books-title">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="books-title">Workbooks on the way</h2>
+        <p>We're writing two workbooks families can use at home, one for each year of the process.</p>
+      </div>
+      <div class="books">
+        <div class="book">
+          <span class="when">Grade 5</span>
+          <h3>Build</h3>
+          <p>Reading, writing and math practice, plus a gentle first look at how independent schools work.</p>
+        </div>
+        <div class="book">
+          <span class="when">Grade 6</span>
+          <h3>Apply</h3>
+          <p>The application year, step by step: choosing schools, tests, interviews and the parent statement.</p>
+        </div>
+      </div>
+      <p class="note" style="color:var(--ink)">Follow along on Instagram to hear when they're ready.</p>
+    </div>
+  </section>
+
+  <section class="contact" aria-labelledby="contact-title">
+    <div class="wrap">
+      <div>
+        <h2 id="contact-title">Have a question?</h2>
+        <p>Send us a message on Instagram. We read every one.</p>
+      </div>
+      <a class="button" href="https://www.instagram.com/nextchapterprep.ca/" rel="noopener">Message @nextchapterprep.ca</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="divider" aria-hidden="true">
+      <span></span>
+      <svg viewBox="0 0 48 48"><g class="art" style="stroke-width:2.6">
+        <path d="M24 15 C20 12 15 11.5 9 12.5 L9 33 C15 32 20 32.5 24 35.5 C28 32.5 33 32 39 33 L39 12.5 C33 11.5 28 12 24 15 Z"/>
+        <path d="M24 15 L24 35.5"/>
+      </g></svg>
+      <span></span>
+    </div>
+    <p class="foot-name">Next Chapter Prep</p>
+    <p class="foot-small">Serving families across the Greater Toronto and Hamilton Area · © 2026</p>
+  </div>
+</footer>
+
+</body>
+</html>
