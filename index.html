@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Next Chapter Prep · Independent school applications, step by step</title>
-<meta name="description" content="Step-by-step help for GTHA families applying to independent schools. Deadlines, tests, interviews and financial aid, explained clearly.">
+<title>Next Chapter Prep · Learning support from Kindergarten to Grade 6</title>
+<meta name="description" content="Reading, writing and math skills, confident learning habits, and clear guidance when it's time to choose a school. For GTHA families with children in Kindergarten to Grade 6.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://nextchapterprep.ca/">
 <meta property="og:title" content="Next Chapter Prep">
-<meta property="og:description" content="Step-by-step help for GTHA families applying to independent schools.">
+<meta property="og:description" content="Learning support for GTHA families, from Kindergarten to Grade 6.">
 <meta property="og:image" content="https://nextchapterprep.ca/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#fbf2e9">
@@ -85,6 +85,12 @@
   .topic svg { width: 52px; height: 52px; }
   .topic h3 { font-size: 26px; line-height: 1.15; margin-bottom: 8px; }
 
+  /* Stages */
+  .stages { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+  .stage { border-top: 3px solid var(--clay); padding-top: 18px; display: flex; flex-direction: column; gap: 8px; }
+  .stage .when { margin: 0; }
+  .stage h3 { font-size: 26px; line-height: 1.15; }
+
   /* Application year */
   .year { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 0.7fr); gap: 56px; align-items: end; }
   .steps { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 28px; counter-reset: step; }
@@ -97,7 +103,7 @@
 
   /* Workbooks */
   .books { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
-  .book { background: var(--paper); border-radius: 6px; padding: 28px; display: flex; flex-direction: column; gap: 10px; }
+  .book { background: var(--sand); border-radius: 6px; padding: 28px; display: flex; flex-direction: column; gap: 10px; }
   .book .when { margin: 0; }
   .book h3 { font-size: 28px; line-height: 1.1; }
 
@@ -119,7 +125,7 @@
     .hero .wrap { grid-template-columns: minmax(0, 1fr); gap: 32px; padding-block: 32px 48px; }
     .lead { font-size: 18px; }
     section { padding-block: 56px; }
-    .topics, .books { grid-template-columns: minmax(0, 1fr); gap: 32px; }
+    .topics, .books, .stages { grid-template-columns: minmax(0, 1fr); gap: 32px; }
     .year { grid-template-columns: minmax(0, 1fr); gap: 40px; }
     .stairs { max-width: 360px; }
     .ig-link .label { display: none; }
@@ -149,12 +155,12 @@
   <section class="hero" aria-labelledby="hero-title" style="padding-block:0">
     <div class="wrap">
       <div>
-        <h1 id="hero-title">Step-by-step help for GTHA families applying to independent schools.</h1>
+        <h1 id="hero-title">Helping your child get ready for their next chapter.</h1>
         <div class="rule"></div>
-        <p class="lead">Deadlines, tests, interviews and financial aid, explained clearly, so you always know what comes next.</p>
+        <p class="lead">Strong reading, writing and math skills, confident learning habits, and clear guidance when it's time to choose a school. For GTHA families with children in Kindergarten to Grade 6.</p>
         <div class="actions">
           <a class="button" href="https://www.instagram.com/nextchapterprep.ca/" rel="noopener">Follow on Instagram</a>
-          <a class="button quiet" href="#year">See the application year</a>
+          <a class="button quiet" href="#help">How we help</a>
         </div>
       </div>
       <svg class="hero-art" viewBox="0 0 520 300" aria-hidden="true"><g class="art">
@@ -169,38 +175,64 @@
     </div>
   </section>
 
-  <section class="band" aria-labelledby="cover-title">
+  <section id="help" class="band" aria-labelledby="help-title">
     <div class="wrap">
       <div class="section-head">
-        <h2 id="cover-title">What we help with</h2>
-        <p>The independent school process has a lot of moving parts. We explain each one in plain language, with the dates and documents you'll actually need.</p>
+        <h2 id="help-title">How we help</h2>
+        <p>Good preparation starts long before any application. We help children build the skills and habits that make every new grade easier, and we guide families through school choices when the time comes.</p>
       </div>
       <div class="topics">
         <div class="topic">
+          <svg viewBox="0 0 52 52" aria-hidden="true"><g class="art"><path d="M26 14 C21 10 14 9.5 6 11 L6 39 C14 37.5 21 38 26 42 C31 38 38 37.5 46 39 L46 11 C38 9.5 31 10 26 14 Z"/><path d="M26 14 L26 42"/></g></svg>
+          <div><h3>Core skills</h3><p>Reading, writing and math practice matched to the Ontario curriculum, at your child's level, from first sounds and numbers to Grade 6 problem solving.</p></div>
+        </div>
+        <div class="topic">
+          <svg viewBox="0 0 52 52" aria-hidden="true"><g class="art"><path d="M26 6 C17 6 11 12.5 11 20.5 C11 26 14 29.5 17 32.5 C19 34.5 20 36.5 20 39 L32 39 C32 36.5 33 34.5 35 32.5 C38 29.5 41 26 41 20.5 C41 12.5 35 6 26 6 Z"/><path d="M20 44 L32 44"/><path d="M22 48.5 L30 48.5"/></g></svg>
+          <div><h3>Learning habits and confidence</h3><p>Talking about ideas, staying organized and keeping calm on tests: the habits that help children enjoy learning and show what they know.</p></div>
+        </div>
+        <div class="topic">
           <svg viewBox="0 0 52 52" aria-hidden="true"><g class="art"><path d="M14 44 L14 8 L34 8 L34 44"/><path d="M34 8 L42 11 L42 46 L34 44"/><circle cx="39" cy="28" r="1.5"/><path d="M4 44 L48 44"/></g></svg>
-          <div><h3>Choosing schools</h3><p>How to build a shortlist around your child: how they learn, the size and pace that suit them, and what daily life and the commute will look like.</p></div>
+          <div><h3>Choosing and applying to schools</h3><p>If your family is considering independent school, we explain each step in plain language: open houses, deadlines, tests, interviews and financial aid.</p></div>
         </div>
         <div class="topic">
-          <svg viewBox="0 0 52 52" aria-hidden="true"><g class="art"><rect x="7" y="10" width="38" height="34" rx="3"/><path d="M7 19 L45 19"/><path d="M16 6 L16 13"/><path d="M36 6 L36 13"/><path d="M19 32 L24 37 L34 26"/></g></svg>
-          <div><h3>Deadlines and financial aid</h3><p>When applications, teacher references and financial aid forms are usually due, and how to keep them all in one family calendar.</p></div>
-        </div>
-        <div class="topic">
-          <svg viewBox="0 0 52 52" aria-hidden="true"><g class="art"><path d="M36 6 L46 16 L19 43 L7 46 L10 34 Z"/><path d="M31 11 L41 21"/><path d="M10 34 L19 43"/></g></svg>
-          <div><h3>Tests and assessments</h3><p>What the SSAT (Secondary School Admission Test) and other entrance assessments involve, and how to prepare steadily rather than cram.</p></div>
-        </div>
-        <div class="topic">
-          <svg viewBox="0 0 52 52" aria-hidden="true"><g class="art"><path d="M6 10 L32 10 Q35 10 35 13 L35 27 Q35 30 32 30 L17 30 L10 36 L10 30 L9 30 Q6 30 6 27 L6 13 Q6 10 9 10 Z"/><path d="M39 20 L43 20 Q46 20 46 23 L46 36 Q46 39 43 39 L42 39 L42 45 L35 39 L24 39 Q21 39 21 36 L21 34"/></g></svg>
-          <div><h3>Interviews and visits</h3><p>What to ask at an open house, and how to help your child talk about themselves in their own words, without memorized answers.</p></div>
+          <svg viewBox="0 0 52 52" aria-hidden="true"><g class="art"><rect x="8" y="30" width="36" height="10" rx="2"/><rect x="12" y="20" width="30" height="10" rx="2"/><rect x="10" y="10" width="32" height="10" rx="2"/><path d="M8 46 L44 46"/></g></svg>
+          <div><h3>Workbooks for home</h3><p>Practice books families can use at the kitchen table, starting with Grade 5 and Grade 6. More grades and one-on-one support will follow.</p></div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="year" aria-labelledby="year-title">
+  <section aria-labelledby="stages-title">
     <div class="wrap">
       <div class="section-head">
-        <h2 id="year-title">The application year at a glance</h2>
-        <p>For children starting Grade 7 in fall 2027, the application happens this school year, while they are in Grade 6.</p>
+        <h2 id="stages-title">Learning at every stage</h2>
+        <p>What children need changes as they grow. Here's where we focus at each stage.</p>
+      </div>
+      <div class="stages">
+        <div class="stage">
+          <span class="when">Kindergarten to Grade 2</span>
+          <h3>Strong foundations</h3>
+          <p>Early reading and writing, number sense, and the curiosity and listening skills that make school feel good from the start.</p>
+        </div>
+        <div class="stage">
+          <span class="when">Grades 3 and 4</span>
+          <h3>Building fluency</h3>
+          <p>Reading to learn, writing clear paragraphs, and confident work with multiplication, fractions and word problems.</p>
+        </div>
+        <div class="stage">
+          <span class="when">Grades 5 and 6</span>
+          <h3>Ready for what's next</h3>
+          <p>Longer writing, multi-step problem solving and good study habits, plus guidance for families applying to independent schools.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="year" class="band" aria-labelledby="year-title">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="year-title">If you're applying to independent schools</h2>
+        <p>Grade 7 is a common entry year, so many families apply while their child is in Grade 6. For children starting Grade 7 in fall 2027, the application year usually looks like this.</p>
       </div>
       <div class="year">
         <ol class="steps">
@@ -219,17 +251,17 @@
     </div>
   </section>
 
-  <section class="band" aria-labelledby="books-title">
+  <section aria-labelledby="books-title">
     <div class="wrap">
       <div class="section-head">
         <h2 id="books-title">Workbooks on the way</h2>
-        <p>We're writing two workbooks families can use at home, one for each year of the process.</p>
+        <p>We're writing workbooks families can use at home, starting with the two years before Grade 7.</p>
       </div>
       <div class="books">
         <div class="book">
           <span class="when">Grade 5</span>
           <h3>Build</h3>
-          <p>Reading, writing and math practice, plus a gentle first look at how independent schools work.</p>
+          <p>Reading, writing and math practice matched to the Ontario curriculum, plus a gentle first look at how independent schools work.</p>
         </div>
         <div class="book">
           <span class="when">Grade 6</span>
